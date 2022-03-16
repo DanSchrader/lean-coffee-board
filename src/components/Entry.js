@@ -11,6 +11,8 @@ export default function Entry({ text, author }) {
 const Card = styled.section`
   padding: 20px;
   max-width: 400px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 5px;
+  background-color: #fefefe;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 `;
