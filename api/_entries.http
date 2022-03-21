@@ -11,3 +11,8 @@ Content-Type: application/json
   "text": "Another text",
   "author": "John"
 }
+
+### DELETE
+
+DELETE {{baseUrl}}/entries/
+Content-Type: application/json
