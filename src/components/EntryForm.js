@@ -34,7 +34,7 @@ const NewEntryForm = styled.form`
   display: flex;
   bottom: 10px;
   width: 100vw;
-  padding: 0 20px;
+  padding: 0 10px;
   gap: 10px;
 `;
 

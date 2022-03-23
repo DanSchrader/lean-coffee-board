@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default function UserPage({ onCreateAuthor }) {
   return (
     <FormWrapper aria-labelledby="user-form" onSubmit={handleUserSubmit}>
-      <UserNameLabel htmlFor="user-name">Type your name</UserNameLabel>
+      <UserNameLabel htmlFor="user-name">What's your name?</UserNameLabel>
       <UserNameInput
         name="userName"
         id="user-name"
@@ -15,7 +15,7 @@ export default function UserPage({ onCreateAuthor }) {
         id="user-color"
         name="userColor"
       ></UserColorInput>
-      <UserFormButton id="user-form">Lean on coffee board</UserFormButton>
+      <UserFormButton id="user-form">Remember me</UserFormButton>
     </FormWrapper>
   );
 
@@ -29,7 +29,18 @@ export default function UserPage({ onCreateAuthor }) {
   }
 }
 
-const FormWrapper = styled.form``;
+const FormWrapper = styled.form`
+  width: 50vw;
+  height: 50vh;
+  background-color: #fefefe;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  top: 20vh;
+  left: 25vw;
+`;
 
 const UserNameLabel = styled.label``;
 

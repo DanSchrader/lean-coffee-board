@@ -16,11 +16,14 @@ export default function EntryPage({ user, userColor }) {
   if (!entries) return <em>loading...</em>;
   return (
     <Wrapper>
-      <EntryPageHeader>Lean Coffee Board</EntryPageHeader>
+      <EntryPageHeader>
+        <Title>LeanCoffeeBoard</Title>
+      </EntryPageHeader>
       <EntryList role="list">
         {entries.map(({ text, author, color, createdAt, _id }) => (
           <li key={_id}>
             <Entry
+              _id={_id}
               text={text}
               author={author}
               color={color}
@@ -74,12 +77,22 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const EntryPageHeader = styled.h1`
-  text-align: center;
-  color: white;
+const EntryPageHeader = styled.div`
+  background: #fefefe;
   padding: 0;
+  margin: 10px 10px 0 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px -1px;
+`;
+
+const Title = styled.h1`
+  text-align: center;
+  color: #656565;
+  font-weight: 300;
+  font-size: 150%;
+  padding-top: 5px;
   margin: 0;
-  margin-top: 20px;
 `;
 
 const EntryList = styled.ul`
@@ -94,7 +107,7 @@ const EntryList = styled.ul`
   @media (min-width: 950px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  @media (min-width: 1250px) {
+  @media (min-width: 1300px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 `;

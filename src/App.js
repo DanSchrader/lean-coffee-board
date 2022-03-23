@@ -29,6 +29,7 @@ export default function App() {
 
 const AppContainer = styled.div`
   background-image: linear-gradient(to top, #007adf 0%, #00ecbc 100%);
+  height: 100vh;
   @media (min-width: 1200px) {
     height: 100vh;
   }
